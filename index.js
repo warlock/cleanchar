@@ -1,6 +1,5 @@
 module.exports = (str, options) => {
   if (!str) return
-
   str = str.toLowerCase()
 
   const replaces = {
@@ -18,13 +17,15 @@ module.exports = (str, options) => {
     "-+$": ""
   }
 
-  if (undefined === options || undefined === options.social || options.spanish !== true) {
-    replaces["ñ"] = "n"
-    replaces["ç"] = "c"
-  }
+  if (undefined === options) {
+    if (undefined === options.spanish || options.spanish !== true) {
+      replaces["ñ"] = "n"
+      replaces["ç"] = "c"
+    }
 
-  if (undefined === options || undefined === options.social || options.social !== true) {
-    replaces["[#@]"] = ""
+    if (undefined === options.social || options.social !== true) {
+      replaces["[#@]"] = ""
+    }
   }
 
   Object.keys(replaces).forEach(key => {
