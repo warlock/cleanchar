@@ -24,7 +24,6 @@ module.exports = (str, options) => {
   }
 
   if (undefined === options || undefined === options.social || options.social !== true) {
-    console.log('social desactivat')
     replaces["[#@]"] = ""
   }
 
