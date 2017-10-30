@@ -32,5 +32,5 @@ module.exports = (str, options) => {
     str = str.replace(new RegExp(key, "gi"), replaces[key])
   })
 
-  return str
+  return str.replace(new RegExp("-", "gi"), ' ')
 }
