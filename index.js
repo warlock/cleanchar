@@ -18,13 +18,14 @@ module.exports = (str, options) => {
     "-+$": ""
   }
 
-  if (undefined !== options && options.spanish !== undefined && options.spanish === false) {
+  if (undefined === options || undefined === options.social || options.spanish !== true) {
     replaces["ñ"] = "n"
     replaces["ç"] = "c"
   }
 
-  if (undefined !== options && options.social !== undefined && options.social === false) {
-    replaces["[#@]"] = "-"
+  if (undefined === options || undefined === options.social || options.social !== true) {
+    console.log('social desactivat')
+    replaces["[#@]"] = ""
   }
 
   Object.keys(replaces).forEach(key => {
