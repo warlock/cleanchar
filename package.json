@@ -1,6 +1,6 @@
 {
   "name": "cleanchar",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Clean special chars",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/warlock/cleanchar.git"
   },
-  "keywords": [],
+  "keywords": ["clean", "string", "text", "char", "special", "accented", "accentuation"],
   "author": "Josep Subils <js@js.gl>  (http://js.gl)",
   "license": "MIT",
   "bugs": {
