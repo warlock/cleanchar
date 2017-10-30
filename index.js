@@ -4,24 +4,27 @@ module.exports = (str, options) => {
   str = str.toLowerCase()
 
   const replaces = {
-    "[<$+%>!`*‘|{?“=}/:\\/]": "",
-    "[\\s#,@&]": "-",
+    "[<$+%>!¡`*‘’'|{¿?“”=}/:\\/]": "",
+    "[\\s,&.]": "-",
     "[àáâãäå]": "a",
     æ: "ae",
-    ç: "c",
     "[èéêë]": "e",
     "[ìíîï]": "i",
     "[òóôõö]": "o",
     "[ùúûü]": "u",
-    "[ýÿ]": "y",
+    "[ỳýŷÿ]": "y",
     "-+": "-",
     "^-+": "",
     "-+$": ""
   }
 
-  if (undefined !== options && options.spanish !== undefined && options.spanish === "off") {
+  if (undefined !== options && options.spanish !== undefined && options.spanish === false) {
     replaces["ñ"] = "n"
     replaces["ç"] = "c"
+  }
+
+  if (undefined !== options && options.social !== undefined && options.social === false) {
+    replaces["[#@]"] = "-"
   }
 
   Object.keys(replaces).forEach(key => {
