@@ -19,7 +19,6 @@ module.exports = (str, options) => {
   }
 
   if (tck.isEmpty(options) || tck.isEmpty(options.spanish) || options.spanish === false) {
-    console.log('reemplazando')
     replaces["ñ"] = "n"
     replaces["ç"] = "c"
   }
