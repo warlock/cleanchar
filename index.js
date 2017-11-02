@@ -4,7 +4,7 @@ module.exports = (str, options) => {
   str = str.toLowerCase()
 
   const replaces = {
-    "[<$+%>!¡`*‘’'|{¿?“”=}/:\\/]": "",
+    "[<$+%>!¡`*‘’'|{¿?“”=}/:\\/\"]": "",
     "[\\s,&.]": "-",
     "[àáâãäå]": "a",
     æ: "ae",
