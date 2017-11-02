@@ -1,3 +1,4 @@
+const tck = require('tck')
 module.exports = (str, options) => {
   if (!str) return
   str = str.toLowerCase()
@@ -17,12 +18,13 @@ module.exports = (str, options) => {
     "-+$": ""
   }
 
-  if (( undefined !== options || undefined === options.spanish ) && options.spanish !== true) {
+  if (tck.isEmpty(options) || tck.isEmpty(options.spanish) || options.spanish === false) {
+    console.log('reemplazando')
     replaces["ñ"] = "n"
     replaces["ç"] = "c"
   }
 
-  if (( undefined !== options || undefined === options.social ) && options.social !== true) {
+  if (tck.isEmpty(options) || tck.isEmpty(options.social) || options.social === false) {
     replaces["[#@]"] = ""
   }
 
