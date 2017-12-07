@@ -1,7 +1,7 @@
 {
   "name": "cleanchar",
-  "version": "0.1.4",
-  "description": "Clean special chars",
+  "version": "0.1.5",
+  "description": "Clean special characters",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha ./test/test.js"
