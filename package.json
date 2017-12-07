@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/warlock/cleanchar#readme",
   "dependencies": {
-    "tck": "^1.0.7"
+    "tck": "^1.1.0"
   },
   "devDependencies": {
     "eslint": "^4.12.1",
