@@ -1,6 +1,10 @@
 # cleanchar
 Clean special characters
 
+[![npm version](https://badge.fury.io/js/cleanchar.svg)](https://badge.fury.io/js/cleanchar)
+[![Build Status](https://travis-ci.org/warlock/cleanchar.svg?branch=master)](https://travis-ci.org/warlock/cleanchar)
+
+
 #### Options:
 If you need can use options: cleanchar(text, options)
 ```
