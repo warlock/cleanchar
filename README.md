@@ -1,5 +1,5 @@
 # cleanchar
-Clean special chars
+Clean special characters
 
 #### Options:
 If you need can use options: cleanchar(text, options)
