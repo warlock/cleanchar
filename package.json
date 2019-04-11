@@ -1,6 +1,6 @@
 {
   "name": "cleanchar",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "description": "Clean special characters",
   "main": "index.js",
   "scripts": {
@@ -26,11 +26,11 @@
   },
   "homepage": "https://github.com/warlock/cleanchar#readme",
   "dependencies": {
-    "tck": "^1.1.0"
+    "tck": "^1.2.0"
   },
   "devDependencies": {
-    "eslint": "^4.16.0",
-    "mocha": "^5.0.0",
-    "mocha-eslint": "^4.1.0"
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.2",
+    "mocha-eslint": "^5.0.0"
   }
 }
